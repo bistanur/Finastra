@@ -1,0 +1,18 @@
+﻿@model MockApp.ViewModels.HomeIndexViewModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        @foreach (var borrower in Model.Borrowers)
+        {
+            <tr>
+                <td>@borrower.Username</td>
+                <td>Amount Need: @borrower.Amount</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
